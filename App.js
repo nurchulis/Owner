@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyleSheet, Text, View, StatusBar } from 'react-native';
 import AppNavigator from './Page/AppNavigator';
-
 export default class App extends React.Component {
 
   render() {
     return (
-   <AppNavigator/>
-  
+<AppNavigator/>
     );
   }
 }

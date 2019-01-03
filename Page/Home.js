@@ -35,6 +35,18 @@ class Home extends React.Component {
                 </TouchableOpacity>
 
 
+          <TouchableOpacity
+                style={styles.customBtnBG}
+                onPress={() => {
+                this.props.navigation.navigate('Edit', {
+                otherParam: 'Edit Profil Instansi',
+                });
+                }}
+                >
+                <Text style={styles.customBtnText}>Profile</Text>
+                </TouchableOpacity>
+
+
       
       </View>
     );

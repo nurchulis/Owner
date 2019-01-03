@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Text, Dimensions, View, containerStyle, TouchableOpacity,TextInput, Image, StyleSheet, ScrollView, Props } from 'react-native'
+import { Text, Dimensions,KeyboardAvoidingView, View, containerStyle, TouchableOpacity,TextInput, Image, StyleSheet, ScrollView, Props } from 'react-native'
 import { ListItem,  Button, chevron, Header } from 'react-native-elements'
 import Icon from 'react-native-vector-icons/Ionicons';
 
@@ -32,8 +32,10 @@ class BuatLayanan extends Component {
    render() {
       return (
             <View style={styles.container}>
-            
-     <View style={styles.aturInput}>
+      <View style={styles.aturInput}>
+      
+            <KeyboardAvoidingView  behavior="padding" enabled>
+
       <Text style={styles.Layanan}>Nama Layanan</Text>
       <TextInput
           style={{height: 40}}
@@ -49,8 +51,9 @@ class BuatLayanan extends Component {
           style={{height: 40}}
           underlineColorAndroid="true"
         />
+
+             </KeyboardAvoidingView>
       </View>
-              
 
 
               <View style={styles.buttonContainer}>
@@ -61,7 +64,6 @@ class BuatLayanan extends Component {
                 <Text style={styles.customBtnText}>Simpan</Text>
                 </TouchableOpacity>
               </View>
-             
             </View>
       )
    }

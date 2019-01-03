@@ -5,6 +5,7 @@ import ListStaff from './ListStaff';
 import ListLayanan from './ListLayanan';
 import BuatLayanan from './BuatLayanan';
 import AddStaff from './AddStaff';
+import Edit from './Edit';
 
 const AppNavigator = createStackNavigator({
 
@@ -13,6 +14,7 @@ const AppNavigator = createStackNavigator({
   ListLayanan: { screen: ListLayanan},
   BuatLayanan: { screen: BuatLayanan},
   AddStaff: { screen: AddStaff},
+  Edit: { screen: Edit},
   
 },
   {
