@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Owner",
-    "slug": "Owner",
+    "name": "Aplikasi Owner",
+    "slug": "owner_antrian",
     "privacy": "public",
     "sdkVersion": "31.0.0",
     "platforms": [
